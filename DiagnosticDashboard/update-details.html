@@ -154,25 +154,32 @@
                     </div>
                     <div class="col-12 col-md-4 mt-2">
                         <div class="mb-3">
-                            <label for="report" class="form-label">Online Report Delivery Service</label>
-                            <select id="report" class="form-select" aria-label="Online Report Delivery Support">
-                                <option selected value="1">Available or not</option>
-                                <option value="2">Yes</option>
-                                <option value="3">No</option>
-                            </select>
+                            <label for="reportDelivery" class="form-label">Has Online Report Delivery Services?</label>
+                            <div class="mt-1">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="hasOnlineReportDeliveryServices" id="inlineRadio1"
+                                        value="option1"/>
+                                    <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="hasOnlineReportDeliveryServices" id="inlineRadio2"
+                                        value="option2" />
+                                    <label class="form-check-label" for="inlineRadio2">No</label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-4 mt-2">
                         <div class="mb-3">
-                            <label for="profession" class="form-label">Radiological Services</label>
+                            <label for="radiologicalServices" class="form-label">Has Radiological Services?</label>
                             <div class="mt-1">
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="isDonateBlood" id="inlineRadio1"
-                                        value="option1" checked />
+                                    <input class="form-check-input" type="radio" name="hasRadiologicalServices" id="inlineRadio1"
+                                        value="option1"/>
                                     <label class="form-check-label" for="inlineRadio1">Yes</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="isDonateBlood" id="inlineRadio2"
+                                    <input class="form-check-input" type="radio" name="hasRadiologicalServices" id="inlineRadio2"
                                         value="option2" />
                                     <label class="form-check-label" for="inlineRadio2">No</label>
                                 </div>
