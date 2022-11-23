@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/font-awesome-all.css" />
     <link rel="stylesheet" href="css/boxicons.css" />
-    <link rel="stylesheet" href="css/datatables.min.css">
     <link rel="stylesheet" href="css/style.css" />
     <!-- CSS SECTION END -->
 </head>
@@ -59,13 +58,13 @@
                 <i class="bx bxs-capsule"></i>
                 <span class="mx-2">Search Medicine</span>
             </a>
-            <a href="add-medicine.html" class="nav-link">
-                <i class="bx bxs-clinic"></i>
-                <span class="mx-2">Add Medicine</span>
+            <a href="add-family-member.html" class="nav-link">
+                <i class="bx bx-user-plus"></i>
+                <span class="mx-2">Add Family Member</span>
             </a>
-            <a href="viewtable.html" class="nav-link active">
-                <i class="bx bxs-capsule"></i>
-                <span class="mx-2">View Medicine</span>
+            <a href="family-members-list.html" class="nav-link">
+                <i class="bx bxs-user-account"></i>
+                <span class="mx-2">Your Family Members</span>
             </a>
             <a href="reward-point.html" class="nav-link">
                 <i class="bx bx-wallet"></i>
@@ -88,8 +87,7 @@
             <div class="d-flex align-items-center">
                 <div class="d-flex me-2 text-light">
                     <div class="dropdown">
-                        <div class="d-flex justify-content-between align-items-center cursor-pointer" id="dropdownnotif"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="d-flex justify-content-between align-items-center cursor-pointer" id="dropdownnotif" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="bx bx-bell bx-sm me-1 fw-lighter hover-rounded-light"></i>
                         </div>
                         <ul class="dropdown-menu dropdown-menu-end pb-0" aria-labelledby="dropdownnotif">
@@ -101,16 +99,15 @@
                             <li><button class="dropdown-item" type="button">Settings</button></li>
                             <li>
                                 <button class="dropdown-item border-top text-center lsp-1" type="button">
-                                    View All
-                                </button>
+                    View All
+                  </button>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="d-flex text-light">
                     <div class="dropdown">
-                        <div class="d-flex justify-content-between align-items-center dropdown-toggle cursor-pointer"
-                            id="dropdownprofile" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="d-flex justify-content-between align-items-center dropdown-toggle cursor-pointer" id="dropdownprofile" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="bx bxs-user-circle bx-md me-2"></i>
                             <span class="lsp-1">Jhon Doe</span>
                         </div>
@@ -126,95 +123,85 @@
         </nav>
         <!--End Top Nav -->
         <!-- MAIN BODY CONTENT START -->
-        <div class="container">
-            <h4 class="text-ems-green text-center mt-3">View Medicine</h4>
-            <div class="row p-1 p-md-3">
+        <!-- <div class="container">
+            <div class="text-center h3 pt-2">
+                Welcome
+                <strong>Jhon Doe</strong>
+            </div>
+            <div class="text-center h6 text-decoration-underline">Make an Appointment</div>
+            <form action="#" method="post">
+                <div class="row p-3 bg-light rounded-2 m-2 mt-4 shadow-sm">
+                    <div class="col-12 col-md-4 mt-2">
+                        <div class="mb-3">
+                            <label for="app.date" class="form-label">Appointment Date</label>
+                            <input type="date" class="form-control" id="app.date" value="2022-04-22"
+                                placeholder="Enter Your Appoinment Date" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="fathername" class="form-label">Father's Name</label>
+                            <input type="text" class="form-control" id="fathername" value="Newton Doe"
+                                placeholder="E.g. Jhon Doe" />
+                        </div>
+                    </div>
 
-                <!-- Static Table Start -->
-                <table id="familyMembers"
-                    class="table  table-hover align-middle  w-100 bg-light rounded shadow">
-                    <thead>
-                        <tr>
-                            <th>SL-No</th>
-                            <th>Brand Name</th>
-                            <th>Stock</th>
-                            <th>Strength</th>
-                            <th >MRP</th>
-                            <th class="text-center">View</th>
-                            <th class="text-center">Edit</th>
-                            <th class="text-center">Delete</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Hospital</td>
-                            <td>56</td>
-                            <td>21</td>
-                            <td>22</td>
-                            <td class="text-center">
-                                <box-icon name='low-vision'></box-icon>
-                            </td>
-                            <td class="text-center">
-                                <box-icon type='solid' name='edit'></box-icon>
-                            </td>
-                            <td class="text-center">
-                                <box-icon name='trash' type='solid' ></box-icon>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Hospital</td>
-                            <td>56</td>
-                            <td>21</td>
-                            <td>22</td>
-                            <td class="text-center">
-                                <box-icon name='low-vision'></box-icon>
-                            </td>
-                            <td class="text-center">
-                                <box-icon type='solid' name='edit'></box-icon>
-                            </td>
-                            <td class="text-center">
-                                <box-icon name='trash' type='solid' ></box-icon>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Hospital</td>
-                            <td>56</td>
-                            <td>21</td>
-                            <td>22</td>
-                            <td class="text-center">
-                                <box-icon name='low-vision'></box-icon>
-                            </td>
-                            <td class="text-center">
-                                <box-icon type='solid' name='edit'></box-icon>
-                            </td>
-                            <td class="text-center">
-                                <box-icon name='trash' type='solid' ></box-icon>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Hospital</td>
-                            <td>56</td>
-                            <td>21</td>
-                            <td>22</td>
-                            <td class="text-center">
-                                <box-icon name='low-vision'></box-icon>
-                            </td>
-                            <td class="text-center">
-                                <box-icon type='solid' name='edit'></box-icon>
-                            </td>
-                            <td class="text-center">
-                                <box-icon name='trash' type='solid' ></box-icon>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <!-- Static Table End -->
-
-
+                    <div class="col-12 col-md-4 mt-2">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" value="Albert Einstein"
+                                placeholder="E.g. Jhon Doe" />
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mt-2">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" value="patient@email.com"
+                                placeholder="E.g. name@example.com" />
+                        </div>
+                    </div>
+                    <div class="col-12 text-center my-3">
+                        <button type="submit" class="btn btn-success bg-ems-green">Update</button>
+                    </div>
+                </div>
+            </form>
+        </div> -->
+        <div class="container mt-5">
+            <div class="text-center text-secondary h6 fw-normal fs-4 mb-3">Make an Appointment</div>
+            <div class="row">
+                <div class="col-md-6 offset-md-3 border p-4 shadow bg-light">
+                    <form action="">
+                        <div class="row g-3">
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label fs-6 text-secondary ">Appintment Date</label>
+                                <input type="date" class="form-control" placeholder="Enter Appointment Date">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label fs-6 text-secondary ">Appintment Time</label>
+                                <input type="time" class="form-control" placeholder="Enter Appointment Time">
+                            </div>
+                            <div class="col-6 mb-3">
+                                <label for="email" class="form-label fs-6 text-secondary ">Req for</label>
+                                <select class="form-select">
+                                    <option selected>Select</option>
+                                    <option value="1">Online Consulting</option>
+                                    <option value="2">Chamber Consulting</option>
+                                    <option value="3">Other</option>
+                                </select>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <label for="email" class="form-label fs-6 text-secondary ">Discount</label>
+                                <select class="form-select">
+                                    <option selected>If any</option>
+                                    <option value="1">Yes</option>
+                                    <option value="2">No</option>
+                                </select>
+                            </div>
+                            <div class="col-12 mt-5 ">                        
+                                <button type="submit" class="btn btn-secondary float-end">Book Appointment</button>
+                                <button type="button" class="btn btn-outline-secondary float-end me-2">Cancel</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
         <!-- MAIN BODY CONTENT END -->
@@ -222,31 +209,22 @@
         <!-- Footer Start -->
 
         <footer class="container-fluid bg-ems-green mt-auto">
-            <p class="text-light text-center pt-3">
+            <p class="text-light text-center py-3 mb-0">
                 Copyright © 2022. All rights reserved
                 <a class="text-decoration-none text-light fw-bold" href="http://sfgroup.com.bd">
-                    SF GROUP
-                </a>
+            SF GROUP
+          </a>
             </p>
         </footer>
 
         <!-- Footer End  -->
-
     </div>
 
     <!-- JS SCRIPT START -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/boxicons.js"></script>
     <script src="js/jquery-3.6.1.min.js"></script>
-    <script src="js/datatables.min.js"></script>
     <script src="js/main.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#familyMembers').DataTable({
-                scrollX: true,
-            });
-        });
-    </script>
     <!-- JS SCRIPT END -->
 </body>
 

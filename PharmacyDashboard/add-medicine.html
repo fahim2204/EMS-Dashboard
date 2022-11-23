@@ -50,10 +50,6 @@
                 <i class="bx bxs-flask"></i>
                 <span class="mx-2">Search Diagnostic</span>
             </a>
-            <a href="add-medicine.html" class="nav-link active">
-                <i class="bx bxs-clinic"></i>
-                <span class="mx-2">Add Medicine</span>
-            </a>
             <a href="search-hospital.html" class="nav-link">
                 <i class="bx bxs-clinic"></i>
                 <span class="mx-2">Search Hospital</span>
@@ -61,6 +57,10 @@
             <a href="search-medicine.html" class="nav-link">
                 <i class="bx bxs-capsule"></i>
                 <span class="mx-2">Search Medicine</span>
+            </a>
+            <a href="add-medicine.html" class="nav-link active">
+                <i class="bx bxs-clinic"></i>
+                <span class="mx-2">Add Medicine</span>
             </a>
             <a href="viewtable.html" class="nav-link">
                 <i class="bx bxs-capsule"></i>
@@ -130,61 +130,47 @@
                 Welcome
                 <strong>Jhon Doe</strong>
             </div>
-            <div class="text-center h6 text-decoration-underline">Add Medicine</div>
+            <div class="text-center h6 text-decoration-underline">Update your profile</div>
             <form action="#" method="post">
                 <div class="row p-3 bg-light rounded-2 m-2 mt-4 shadow-sm">
                     <div class="col-12 col-md-4 mt-2">
                         <div class="mb-3">
                             <label for="brandname" class="form-label">Brand Name</label>
-                            <input type="text" class="form-control" id="brandname"
-                                placeholder="E.g. XRay" />
+                            <input type="text" class="form-control" id="brandname" placeholder="E.g. XRay" />
                         </div>
+
                         <div class="mb-3">
                             <label for="dosage" class="form-label">Forms/Dosage</label>
                             <input class="form-control" type="text" id="dosage">
                         </div>
-                        <div class="mb-3">
-                            <label for="price" class="form-label">MRP(per pack)</label>
-                            <input type="Number" class="form-control" id="price"
-                                placeholder="E.g.1000" />
-                        </div>
-                        <div class="mb-3">
-                            <label for="C.brandname" class="form-label">Company Brand Name</label>
-                            <input type="text" class="form-control" id="C.brandname"
-                                placeholder="E.g. XRay" />
-                        </div>
                     </div>
+
                     <div class="col-12 col-md-4 mt-2">
                         <div class="mb-3">
                             <label for="genericname" class="form-label">Generic Name</label>
-                            <input type="text" class="form-control" id="genericname"
-                                placeholder="E.g. XRay" />
-                        </div>
-                        <div class="mb-3">
-                            <label for="packsize" class="form-label">Pack Size</label>
-                            <input class="form-control" type="text" id="packsize"  placeholder="E.g. .."/>
+                            <input type="text" class="form-control" id="genericname" placeholder="E.g. XRay" />
                         </div>
                         <div class="mb-3">
                             <label for="stock" class="form-label">Stock</label>
-                            <input class="form-control" type="text" id="stock"  placeholder="E.g. .."/>
+                            <input class="form-control" type="text" id="stock" placeholder="E.g. .." />
                         </div>
+
                     </div>
                     <div class="col-12 col-md-4 mt-2">
                         <div class="mb-3">
                             <label for="strength" class="form-label">Strength</label>
-                            <input type="text" class="form-control" id="strength"
-                                placeholder="E.g. Mg" />
+                            <input type="text" class="form-control" id="strength" placeholder="E.g. Mg" />
                         </div>
                         <div class="mb-3">
-                            <label for="price" class="form-label">MRP(per piece)</label>
-                            <input type="Number" class="form-control" id="price"
-                                placeholder="E.g.1000" />
+                            <label for="price" class="form-label">MRP(per pack)</label>
+                            <input type="Number" class="form-control" id="price" placeholder="E.g.1000" />
                         </div>
-                        <div class="mb-3">
-                            <label for="medicineImg" class="form-label">Medicines Image</label>
-                            <input class="form-control" type="file" id="medicineImg">
-                        </div>
+
                     </div>
+                    <div class="col-12 text-center my-3">
+                        <button type="submit" class="btn btn-success bg-ems-green">Update</button>
+                    </div>
+                </div>
             </form>
         </div>
         <!-- MAIN BODY CONTENT END -->
