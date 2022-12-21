@@ -16,27 +16,27 @@
             <i class="bx bxs-edit-alt"></i>
             <span class="mx-2">Search Your Needs</span>
         </a>
-        <a href="search-medicine.php" class="nav-link">
+        <a href="search-medicine.php" class="nav-link <?php if($page=='Smedicine'){echo 'active';}?>">
             <i class="bx bxs-capsule"></i>
             <span class="mx-2">Search Medicine</span>
         </a>
-        <a href="add-medicine.php" class="nav-link">
+        <a href="add-medicine.php" class="nav-link <?php if($page=='addmedicine'){echo 'active';}?>">
             <i class="bx bxs-clinic"></i>
             <span class="mx-2">Add Medicine</span>
         </a>
-        <a href="viewtable.php" class="nav-link">
+        <a href="viewtable.php" class="nav-link <?php if($page=='stockdetails'){echo 'active';}?>">
             <i class="bx bxs-capsule"></i>
             <span class="mx-2">Stock Details</span>
         </a>
-        <a href="orderdetails.php" class="nav-link">
+        <a href="orderdetails.php" class="nav-link <?php if($page=='orderdetails'){echo 'active';}?>">
             <i class="bx bx-wallet"></i>
             <span class="mx-2">Order Details</span>
         </a>
-        <a href="reward-point.php" class="nav-link">
+        <a href="reward-point.php" class="nav-link ">
             <i class="bx bx-wallet"></i>
             <span class="mx-2">Reward Point</span>
         </a>
-        <a href="" class="nav-link">
+        <a href="" class="nav-link <?php if($page=='logout'){echo 'active';}?>">
             <i class="bx bxs-log-out"></i>
             <span class="mx-2">logout</span>
         </a>

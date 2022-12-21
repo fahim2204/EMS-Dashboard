@@ -30,205 +30,258 @@
     <!-- Preloader Start-->
 
     <!-- SIDE-NAV START -->
-    <div class="side-navbar active-nav d-flex flex-column shadow-sm" id="sidebar">
-        <div class="d-flex justify-content-center py-2">
-            <a href="index.php"><img src="img/EMS-logo.svg" alt="LOGO" height="60" /></a>
-        </div>
-        <ul class="nav flex-column text-white w-100 cursor-pointer mt-2">
-            <a href="index.php" class="nav-link">
-                <i class="bx bxs-dashboard"></i>
-                <span class="mx-2">Your Dashboard</span>
-            </a>
-            <a href="update-details.php" class="nav-link">
-                <i class="bx bxs-edit-alt"></i>
-                <span class="mx-2">Update Your Details</span>
-            </a>
-            <a href="update-details.php" class="nav-link">
-                <i class="bx bxs-edit-alt"></i>
-                <span class="mx-2">Search Your Needs</span>
-            </a>
-            <a href="search-doctor.php" class="nav-link">
-                <i class="bx bx-user-check"></i>
-                <span class="mx-2">Doctor</span>
-            </a>
-            <a href="search-diagnostic.php" class="nav-link">
-                <i class="bx bxs-flask"></i>
-                <span class="mx-2">Diagnostic</span>
-            </a>
-            <a href="search-hospital.php" class="nav-link">
-                <i class="bx bxs-clinic"></i>
-                <span class="mx-2">Hospital</span>
-            </a>
-            <a href="search-medicine.php" class="nav-link">
-                <i class="bx bxs-capsule"></i>
-                <span class="mx-2">Medicine</span>
-            </a>
-            <a href="add-family-member.php" class="nav-link">
-                <i class="bx bx-user-plus"></i>
-                <span class="mx-2">Add Members</span>
-            </a>
-            <a href="family-members-list.php" class="nav-link">
-                <i class="bx bxs-user-account"></i>
-                <span class="mx-2">Member Details</span>
-            </a>
-            <a href="reward-point.php" class="nav-link">
-                <i class="bx bx-wallet"></i>
-                <span class="mx-2">Reward Points</span>
-            </a>
-            <a href="prescription.php" class="nav-link">
-                <i class='bx bx-bookmark-alt-plus'></i>
-                <span class="mx-2">Your Prescription</span>
-            </a>
-            <a href="#" class="nav-link">
-                <i class='bx bxs-capsule'></i>
-                <span class="mx-2">Your Current Medication</span>
-            </a>
-            <a href="medical-report.php" class="nav-link active">
-                <i class='bx bxs-report'></i>
-                <span class="mx-2">Your Medical Reports</span>
-            </a>
-            <a href="medical-history.php" class="nav-link">
-                <i class='bx bx-history'></i>
-                <span class="mx-2">Your Medical History</span>
-            </a>
-            <a href="#" class="nav-link">
-                <i class='bx bx-plus-medical'></i>
-                <span class="mx-2">Your Doctors</span>
-            </a>
-            <a href="#" class="nav-link">
-                <i class="bx bxs-clinic"></i>
-                <span class="mx-2">Your Hospitals</span>
-            </a>
-            <a href="#" class="nav-link">
-                <i class="bx bx-wallet"></i>
-                <span class="mx-2">Patient Stories</span>
-            </a>
-            <a href="#" class="nav-link">
-                <i class="bx bxs-log-out"></i>
-                <span class="mx-2">logout</span>
-            </a>
-        </ul>
-    </div>
+    <?php $page='history'; include 'sidebar.php'; ?>
     <!-- SIDE-NAV END -->
 
     <div class="my-container active-cont d-flex flex-column justify-content-start vh-100">
         <!-- Top Nav -->
-        <nav class="navbar top-navbar navbar-light sticky-top top-0 bg-ems-green px-5 d-flex">
-            <div class="left">
-                <a class="btn border-0" id="menu-btn"><i id="menu-icon" class="fas fa-arrow-left"></i></a>
-            </div>
-            <div class="d-flex justify-content-center">
-                <a href="medical-history.html"><button type="submit" class="btn btn-success bg-ems-white text-ems-green fs-7">Are you in a Medication?</button></a>
-            </div>
-            <div class="d-flex align-items-center">
-                <div class="d-flex me-2 text-light">
-                    <div class="dropdown">
-                        <div class="d-flex justify-content-between align-items-center cursor-pointer" id="dropdownnotif" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="bx bx-bell bx-sm me-1 fw-lighter hover-rounded-light"></i>
-                        </div>
-                        <ul class="dropdown-menu dropdown-menu-end pb-0" aria-labelledby="dropdownnotif">
-                            <div class="text-center border-bottom pb-1">
-                                <span class="text-center mx-auto">Notification</span>
-                            </div>
-                            <li><button class="dropdown-item" type="button">My Account</button></li>
-                            <li><button class="dropdown-item" type="button">My Profile</button></li>
-                            <li><button class="dropdown-item" type="button">Settings</button></li>
-                            <li>
-                                <button class="dropdown-item border-top text-center lsp-1" type="button">
-                                    View All
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="d-flex text-light">
-                    <div class="dropdown">
-                        <div class="d-flex justify-content-between align-items-center dropdown-toggle cursor-pointer" id="dropdownprofile" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="bx bxs-user-circle bx-md me-2"></i>
-                            <span class="lsp-1">Jhon Doe</span>
-                        </div>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownprofile">
-                            <li><button class="dropdown-item" type="button">My Account</button></li>
-                            <li><button class="dropdown-item" type="button">My Profile</button></li>
-                            <li><button class="dropdown-item" type="button">Settings</button></li>
-                            <li><button class="dropdown-item" type="button">Logout</button></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
+        <?php include 'header.php'; ?>
         <!--End Top Nav -->
         <!-- MAIN BODY CONTENT START -->
         <div class="container">
-            <!-- <h4 class="text-ems-green text-center mt-3">History</h4> -->
-            <ul class="nav nav-tabs nav-fill mb-3" id="ex1" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link active" id="ex2-tab-1" data-mdb-toggle="tab" href="#ex2-tabs-1" role="tab" aria-controls="ex2-tabs-1" aria-selected="true">Doctor</a>
+            <h3 class="text-ems-green text-center fw-bold mt-3">History</h3>
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-pills mt-3 mb-3 d-flex justify-content-center">
+
+                <li class="nav-item p-3">
+                    <a class="nav-link active" data-bs-toggle="pill" href="#doctor">Doctor</a>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="ex2-tab-2" data-mdb-toggle="tab" href="#ex2-tabs-2" role="tab" aria-controls="ex2-tabs-2" aria-selected="false">Hospital</a>
+
+
+                <li class="nav-item p-3">
+                    <a class="nav-link" data-bs-toggle="pill" href="#hospital">Hospital</a>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="ex2-tab-3" data-mdb-toggle="tab" href="#ex2-tabs-3" role="tab" aria-controls="ex2-tabs-3" aria-selected="false">Medicine</a>
+
+
+                <li class="nav-item p-3">
+                    <a class="nav-link" data-bs-toggle="pill" href="#medicine">Medicine</a>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="ex2-tab-3" data-mdb-toggle="tab" href="#ex2-tabs-3" role="tab" aria-controls="ex2-tabs-3" aria-selected="false">Diagonstic</a>
+
+
+                <li class="nav-item p-3">
+                    <a class="nav-link " data-bs-toggle="pill" href="#diagonstic">Diagonstic</a>
                 </li>
+
             </ul>
-            <div class="row p-1 p-md-3">
 
-                <!-- Static Table Start -->
-                <table id="familyMembers" class="table table-striped table-hover align-middle w-100 bg-light rounded shadow">
-                    <thead>
-                        <tr>
-                            <th class="text-center">SL-No</th>
-                            <th class="text-center">Date</th>
-                            <th class="text-center">Diagonstics</th>
-                            <th class="text-center">Pharmacy</th>
-                            <th class="text-center">Total Payment</th>
-                            <th class="text-center">View</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="text-center">
-                            <td>1</td>
-                            <td>12/12/2022</td>
-                            <td>AL-AQSA</td>
-                            <td>AL-AQSA</td>
-                            <td>2100</td>
-                            <!-- <td><i class='bx bx-low-vision fs-5'></i></td> -->
-                            <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
-                        </tr>
-                        <tr class="text-center">
-                            <td>2</td>
-                            <td>12/12/2022</td>
-                            <td>AL-AQSA</td>
-                            <td>AL-AQSA</td>
-                            <td>2100</td>
-                            <td><i class='bx bx-low-vision fs-5'></i></td>
-                        </tr>
-                        <tr class="text-center">
-                            <td>3</td>
-                            <td>12/12/2022</td>
-                            <td>AL-AQSA</td>
-                            <td>AL-AQSA</td>
-                            <td>2100</td>
-                            <td><i class='bx bx-low-vision fs-5'></i></td>
-                        </tr>
-                        <tr class="text-center">
-                            <td>4</td>
-                            <td>12/12/2022</td>
-                            <td>AL-AQSA</td>
-                            <td>AL-AQSA</td>
-                            <td>2100</td>
-                            <td><i class='bx bx-low-vision fs-5'></i></td>
-                        </tr>
+            <div class="tab-content">
+                <div class="tab-pane container bg-light active" id="doctor">
+                    <div class="row p-1 p-md-3">
+                        <!-- Static Table Start -->
+                        <table id="doctors" class="table table-striped table-hover align-middle w-100 bg-light rounded">
+                            <thead>
+                                <tr>
+                                    <th class="text-center">SL-No</th>
+                                    <th class="text-center">Date</th>
+                                    <th class="text-center">Diagonstics</th>
+                                    <th class="text-center">Pharmacy</th>
+                                    <th class="text-center">Total Payment</th>
+                                    <th class="text-center">View</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="text-center">
+                                    <td>1</td>
+                                    <td>12/12/2022</td>
+                                    <td>AL-AQSA</td>
+                                    <td>AL-AQSA</td>
+                                    <td>2100</td>
+                                    <!-- <td><i class='bx bx-low-vision fs-5'></i></td> -->
+                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>2</td>
+                                    <td>12/12/2022</td>
+                                    <td>AL-AQSA</td>
+                                    <td>AL-AQSA</td>
+                                    <td>2100</td>
+                                    <td><i class='bx bx-low-vision fs-5'></i></td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>3</td>
+                                    <td>12/12/2022</td>
+                                    <td>AL-AQSA</td>
+                                    <td>AL-AQSA</td>
+                                    <td>2100</td>
+                                    <td><i class='bx bx-low-vision fs-5'></i></td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>4</td>
+                                    <td>12/12/2022</td>
+                                    <td>AL-AQSA</td>
+                                    <td>AL-AQSA</td>
+                                    <td>2100</td>
+                                    <td><i class='bx bx-low-vision fs-5'></i></td>
+                                </tr>
 
-                    </tbody>
-                </table>
-                <!-- Static Table End -->
+                            </tbody>
+                        </table>
+                        <!-- Static Table End -->
+                    </div>
+                </div>
+                <div class="tab-pane container bg-light fade" id="hospital">
+                    <div class="row p-1 p-md-3">
+                        <!-- Static Table Start -->
+                        <table id="hospitals" class="table table-striped table-hover align-middle w-100 bg-light rounded">
+                            <thead>
+                                <tr>
+                                    <th class="text-center">SL-No</th>
+                                    <th class="text-center">Date</th>
+                                    <th class="text-center">Diagonstics</th>
+                                    <th class="text-center">Pharmacy</th>
+                                    <th class="text-center">Total Payment</th>
+                                    <th class="text-center">View</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="text-center">
+                                    <td>1</td>
+                                    <td>12/12/2022</td>
+                                    <td>AL-AQSA</td>
+                                    <td>AL-AQSA</td>
+                                    <td>2100</td>
+                                    <!-- <td><i class='bx bx-low-vision fs-5'></i></td> -->
+                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>2</td>
+                                    <td>12/12/2022</td>
+                                    <td>AL-AQSA</td>
+                                    <td>AL-AQSA</td>
+                                    <td>2100</td>
+                                    <td><i class='bx bx-low-vision fs-5'></i></td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>3</td>
+                                    <td>12/12/2022</td>
+                                    <td>AL-AQSA</td>
+                                    <td>AL-AQSA</td>
+                                    <td>2100</td>
+                                    <td><i class='bx bx-low-vision fs-5'></i></td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>4</td>
+                                    <td>12/12/2022</td>
+                                    <td>AL-AQSA</td>
+                                    <td>AL-AQSA</td>
+                                    <td>2100</td>
+                                    <td><i class='bx bx-low-vision fs-5'></i></td>
+                                </tr>
 
+                            </tbody>
+                        </table>
+                        <!-- Static Table End -->
+                    </div>
+                </div>
+                <div class="tab-pane container bg-light fade" id="medicine">
+                    <div class="row p-1 p-md-3">
+                        <!-- Static Table Start -->
+                        <table id="medicines" class="table table-striped table-hover align-middle w-100 bg-light rounded">
+                            <thead>
+                                <tr>
+                                    <th class="text-center">SL-No</th>
+                                    <th class="text-center">Date</th>
+                                    <th class="text-center">Diagonstics</th>
+                                    <th class="text-center">Pharmacy</th>
+                                    <th class="text-center">Total Payment</th>
+                                    <th class="text-center">View</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="text-center">
+                                    <td>1</td>
+                                    <td>12/12/2022</td>
+                                    <td>AL-AQSA</td>
+                                    <td>AL-AQSA</td>
+                                    <td>2100</td>
+                                    <!-- <td><i class='bx bx-low-vision fs-5'></i></td> -->
+                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>2</td>
+                                    <td>12/12/2022</td>
+                                    <td>AL-AQSA</td>
+                                    <td>AL-AQSA</td>
+                                    <td>2100</td>
+                                    <td><i class='bx bx-low-vision fs-5'></i></td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>3</td>
+                                    <td>12/12/2022</td>
+                                    <td>AL-AQSA</td>
+                                    <td>AL-AQSA</td>
+                                    <td>2100</td>
+                                    <td><i class='bx bx-low-vision fs-5'></i></td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>4</td>
+                                    <td>12/12/2022</td>
+                                    <td>AL-AQSA</td>
+                                    <td>AL-AQSA</td>
+                                    <td>2100</td>
+                                    <td><i class='bx bx-low-vision fs-5'></i></td>
+                                </tr>
 
+                            </tbody>
+                        </table>
+                        <!-- Static Table End -->
+                    </div>
+                </div>
+                <div class="tab-pane container bg-light fade" id="diagonstic">
+                    <div class="row p-1 p-md-3">
+                        <!-- Static Table Start -->
+                        <table id="diagonstics" class="table table-striped table-hover align-middle w-100 bg-light rounded">
+                            <thead>
+                                <tr>
+                                    <th class="text-center">SL-No</th>
+                                    <th class="text-center">Date</th>
+                                    <th class="text-center">Diagonstics</th>
+                                    <th class="text-center">Pharmacy</th>
+                                    <th class="text-center">Total Payment</th>
+                                    <th class="text-center">View</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="text-center">
+                                    <td>1</td>
+                                    <td>12/12/2022</td>
+                                    <td>AL-AQSA</td>
+                                    <td>AL-AQSA</td>
+                                    <td>2100</td>
+                                    <!-- <td><i class='bx bx-low-vision fs-5'></i></td> -->
+                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>2</td>
+                                    <td>12/12/2022</td>
+                                    <td>AL-AQSA</td>
+                                    <td>AL-AQSA</td>
+                                    <td>2100</td>
+                                    <td><i class='bx bx-low-vision fs-5'></i></td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>3</td>
+                                    <td>12/12/2022</td>
+                                    <td>AL-AQSA</td>
+                                    <td>AL-AQSA</td>
+                                    <td>2100</td>
+                                    <td><i class='bx bx-low-vision fs-5'></i></td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>4</td>
+                                    <td>12/12/2022</td>
+                                    <td>AL-AQSA</td>
+                                    <td>AL-AQSA</td>
+                                    <td>2100</td>
+                                    <td><i class='bx bx-low-vision fs-5'></i></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                        <!-- Static Table End -->
+                    </div>
+                </div>
             </div>
         </div>
         <!-- MAIN BODY CONTENT END -->
@@ -245,7 +298,6 @@
         </footer>
 
         <!-- Footer End  -->
-
     </div>
 
     <!-- JS SCRIPT START -->
@@ -256,9 +308,12 @@
     <script src="js/main.js"></script>
     <script>
         $(document).ready(function() {
-            $('#familyMembers').DataTable({
+            $('#doctors').DataTable({
                 scrollX: true,
             });
+            $('#hospitals').DataTable();
+            $('#medicines').DataTable();
+            $('#diagonstics').DataTable();
         });
         $(document).ready(function() {
             $('[data-toggle="popover"]').popover();

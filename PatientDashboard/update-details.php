@@ -29,135 +29,13 @@
     <!-- Preloader Start-->
 
     <!-- SIDE-NAV START -->
-    <div class="side-navbar active-nav d-flex flex-column shadow-sm" id="sidebar">
-        <div class="d-flex justify-content-center py-2">
-            <a href="index.php"><img src="img/EMS-logo.svg" alt="LOGO" height="60" /></a>
-        </div>
-        <ul class="nav flex-column text-white w-100 cursor-pointer mt-2">
-            <a href="index.php" class="nav-link">
-                <i class="bx bxs-dashboard"></i>
-                <span class="mx-2">Your Dashboard</span>
-            </a>
-            <a href="update-details.php" class="nav-link active">
-                <i class="bx bxs-edit-alt"></i>
-                <span class="mx-2">Update Your Details</span>
-            </a>
-            <a href="update-details.php" class="nav-link">
-                <i class="bx bxs-edit-alt"></i>
-                <span class="mx-2">Search Your Needs</span>
-            </a>
-            <a href="search-doctor.php" class="nav-link">
-                <i class="bx bx-user-check"></i>
-                <span class="mx-2">Doctor</span>
-            </a>
-            <a href="search-diagnostic.php" class="nav-link">
-                <i class="bx bxs-flask"></i>
-                <span class="mx-2">Diagnostic</span>
-            </a>
-            <a href="search-hospital.php" class="nav-link">
-                <i class="bx bxs-clinic"></i>
-                <span class="mx-2">Hospital</span>
-            </a>
-            <a href="search-medicine.php" class="nav-link">
-                <i class="bx bxs-capsule"></i>
-                <span class="mx-2">Medicine</span>
-            </a>
-            <a href="add-family-member.php" class="nav-link">
-                <i class="bx bx-user-plus"></i>
-                <span class="mx-2">Add Members</span>
-            </a>
-            <a href="family-members-list.php" class="nav-link">
-                <i class="bx bxs-user-account"></i>
-                <span class="mx-2">Member Details</span>
-            </a>
-            <a href="reward-point.php" class="nav-link">
-                <i class="bx bx-wallet"></i>
-                <span class="mx-2">Reward Points</span>
-            </a>
-            <a href="prescription.php" class="nav-link">
-                <i class='bx bx-bookmark-alt-plus'></i>
-                <span class="mx-2">Your Prescription</span>
-            </a>
-            <a href="#" class="nav-link">
-                <i class='bx bxs-capsule'></i>
-                <span class="mx-2">Your Current Medication</span>
-            </a>
-            <a href="medical-report.php" class="nav-link">
-                <i class='bx bxs-report'></i>
-                <span class="mx-2">Your Medical Reports</span>
-            </a>
-            <a href="medical-history.php" class="nav-link">
-                <i class='bx bx-history'></i>
-                <span class="mx-2">Your Medical History</span>
-            </a>
-            <a href="#" class="nav-link">
-                <i class='bx bx-plus-medical'></i>
-                <span class="mx-2">Your Doctors</span>
-            </a>
-            <a href="#" class="nav-link">
-                <i class="bx bxs-clinic"></i>
-                <span class="mx-2">Your Hospitals</span>
-            </a>
-            <a href="#" class="nav-link">
-                <i class="bx bx-wallet"></i>
-                <span class="mx-2">Patient Stories</span>
-            </a>
-            <a href="#" class="nav-link">
-                <i class="bx bxs-log-out"></i>
-                <span class="mx-2">logout</span>
-            </a>
-        </ul>
-    </div>
+    <?php $page = 'updetails';
+    include 'sidebar.php'; ?>
     <!-- SIDE-NAV END -->
 
     <div class="my-container active-cont d-flex flex-column vh-100">
         <!-- Top Nav -->
-        <nav class="navbar top-navbar navbar-light sticky-top top-0 bg-ems-green px-5 d-flex">
-            <div class="left">
-                <a class="btn border-0" id="menu-btn"><i id="menu-icon" class="fas fa-arrow-left"></i></a>
-            </div>
-            <div class="d-flex justify-content-center">
-                <a href="medical-history.html"><button type="submit" class="btn btn-success bg-ems-white text-ems-green fs-7">Are you in a Medication?</button></a>
-            </div>
-            <div class="d-flex align-items-center">
-                <div class="d-flex me-2 text-light">
-                    <div class="dropdown">
-                        <div class="d-flex justify-content-between align-items-center cursor-pointer" id="dropdownnotif"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="bx bx-bell bx-sm me-1 fw-lighter hover-rounded-light"></i>
-                        </div>
-                        <ul class="dropdown-menu dropdown-menu-end pb-0" aria-labelledby="dropdownnotif">
-                            <div class="text-center border-bottom pb-1">
-                                <span class="text-center mx-auto">Notification</span>
-                            </div>
-                            <li><button class="dropdown-item" type="button">My Account</button></li>
-                            <li><button class="dropdown-item" type="button">My Profile</button></li>
-                            <li><button class="dropdown-item" type="button">Settings</button></li>
-                            <li>
-                                <button class="dropdown-item border-top text-center lsp-1" type="button">
-                                    View All
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="d-flex text-light">
-                    <div class="dropdown">
-                        <div class="d-flex justify-content-between align-items-center dropdown-toggle cursor-pointer"
-                            id="dropdownprofile" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="bx bxs-user-circle bx-md me-2"></i>
-                            <span class="lsp-1">Jhon Doe</span>
-                        </div>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownprofile">
-                            <li><button class="dropdown-item" type="button">My Account</button></li>
-                            <li><button class="dropdown-item" type="button">My Profile</button></li>
-                            <li><button class="dropdown-item" type="button">Settings</button></li>
-                            <li><button class="dropdown-item" type="button">Logout</button></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
+        <?php include 'header.php'; ?>
         <!--End Top Nav -->
         <!-- MAIN BODY CONTENT START -->
         <div class="container">
@@ -171,23 +49,19 @@
                     <div class="col-12 col-md-4 mt-2">
                         <div class="mb-3">
                             <label for="emsId" class="form-label">EMS ID</label>
-                            <input type="text" disabled class="form-control" id="emsId" value="PT-2022123"
-                                placeholder="E.g. PT-XXXXX" />
+                            <input type="text" disabled class="form-control" id="emsId" value="PT-2022123" placeholder="E.g. PT-XXXXX" />
                         </div>
                         <div class="mb-3">
                             <label for="name" class="form-label">Your Name</label>
-                            <input type="text" class="form-control" id="name" value="Albert Einstein"
-                                placeholder="E.g. Jhon Doe" />
+                            <input type="text" class="form-control" id="name" value="Albert Einstein" placeholder="E.g. Jhon Doe" />
                         </div>
                         <div class="mb-3">
                             <label for="mobile" class="form-label">Your Mobile Number</label>
-                            <input type="tel" class="form-control" id="mobile" value="01713456789"
-                                placeholder="E.g. 0134567xxxx" />
+                            <input type="tel" class="form-control" id="mobile" value="01713456789" placeholder="E.g. 0134567xxxx" />
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Your Email Address</label>
-                            <input type="email" class="form-control" id="email" value=""
-                                placeholder="E.g. name@example.com" />
+                            <input type="email" class="form-control" id="email" value="" placeholder="E.g. name@example.com" />
                         </div>
                         <div class="mb-3">
                             <label for="age" class="form-label">Your Age</label>
@@ -211,31 +85,26 @@
                             <label for="identity" class="form-label fs-6">Your Identity</label>
                             <div class="mb-1">
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="identityType" id="inlineRadio1"
-                                        value="option1" checked />
+                                    <input class="form-check-input" type="radio" name="identityType" id="inlineRadio1" value="option1" checked />
                                     <label class="form-check-label" for="inlineRadio1">NID</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="identityType" id="inlineRadio2"
-                                        value="option2" />
+                                    <input class="form-check-input" type="radio" name="identityType" id="inlineRadio2" value="option2" />
                                     <label class="form-check-label" for="inlineRadio2">Birth Reg No.</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="identityType" id="inlineRadio3"
-                                        value="option3" />
+                                    <input class="form-check-input" type="radio" name="identityType" id="inlineRadio3" value="option3" />
                                     <label class="form-check-label" for="inlineRadio3">Passport No.</label>
                                 </div>
                             </div>
-                            <input type="text" class="form-control" id="identityNumber" value="19433535343434"
-                                placeholder="E.g. 2001XXXXXXXX" />
+                            <input type="text" class="form-control" id="identityNumber" value="19433535343434" placeholder="E.g. 2001XXXXXXXX" />
                         </div>
                     </div>
 
                     <div class="col-12 col-md-4 mt-2">
                         <div class="mb-3">
                             <label for="fathername" class="form-label">Your Father's Name</label>
-                            <input type="text" class="form-control" id="fathername" value="Newton Doe"
-                                placeholder="E.g. Jhon Doe" />
+                            <input type="text" class="form-control" id="fathername" value="Newton Doe" placeholder="E.g. Jhon Doe" />
                         </div>
                         <div class="mb-3">
                             <label for="profession" class="form-label">Your Profession</label>
@@ -253,20 +122,15 @@
                         </div>
                         <div class="mb-3">
                             <label for="dob" class="form-label">Your Date of Birth</label>
-                            <input type="date" class="form-control" id="dob" value="2022-04-22"
-                                placeholder="E.g. Jhon Doe" />
+                            <input type="date" class="form-control" id="dob" value="2022-04-22" placeholder="E.g. Jhon Doe" />
                         </div>
                         <div class="mb-3">
                             <label for="Address" class="form-label">Your Address-1</label>
-                            <input type="text" class="form-control" id="Address"
-                                value="H-30, B-12, South Banasree, Dhaka"
-                                placeholder="E.g. H-30, B-12, South Banasree, Dhaka" />
+                            <input type="text" class="form-control" id="Address" value="H-30, B-12, South Banasree, Dhaka" placeholder="E.g. H-30, B-12, South Banasree, Dhaka" />
                         </div>
                         <div class="mb-3">
                             <label for="Address" class="form-label">Your Address-2</label>
-                            <input type="text" class="form-control" id="Address"
-                                value="H-30, B-12, South Banasree, Dhaka"
-                                placeholder="E.g. H-30, B-12, South Banasree, Dhaka" />
+                            <input type="text" class="form-control" id="Address" value="H-30, B-12, South Banasree, Dhaka" placeholder="E.g. H-30, B-12, South Banasree, Dhaka" />
                         </div>
                         <div class="mb-3">
                             <label for="gender" class="form-label">Select Gender</label>
@@ -281,13 +145,11 @@
                             <label for="profession" class="form-label">Do you want to support helpless People?</label>
                             <div class="mt-1">
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="isSupportPeople"
-                                        id="inlineRadio1" value="option1" />
+                                    <input class="form-check-input" type="radio" name="isSupportPeople" id="inlineRadio1" value="option1" />
                                     <label class="form-check-label" for="inlineRadio1">Yes</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="isSupportPeople"
-                                        id="inlineRadio2" value="option2" checked />
+                                    <input class="form-check-input" type="radio" name="isSupportPeople" id="inlineRadio2" value="option2" checked />
                                     <label class="form-check-label" for="inlineRadio2">No</label>
                                 </div>
                             </div>
@@ -296,18 +158,15 @@
                     <div class="col-12 col-md-4 mt-2">
                         <div class="mb-3">
                             <label for="name" class="form-label">Your Emergency Contact Name</label>
-                            <input type="text" class="form-control" id="name" value="Albert Einstein"
-                                placeholder="E.g. Jhon Doe" />
+                            <input type="text" class="form-control" id="name" value="Albert Einstein" placeholder="E.g. Jhon Doe" />
                         </div>
                         <div class="mb-3">
                             <label for="mobile" class="form-label">Emergency Contact Number</label>
-                            <input type="tel" class="form-control" id="mobile" value="01713456789"
-                                placeholder="E.g. 0134567xxxx" />
+                            <input type="tel" class="form-control" id="mobile" value="01713456789" placeholder="E.g. 0134567xxxx" />
                         </div>
                         <div class="mb-3">
                             <label for="referrer" class="form-label">Realation With Emergency Contact</label>
-                            <input type="text" class="form-control" id="referrer" value=""
-                                placeholder="E.g. Relationship" />
+                            <input type="text" class="form-control" id="referrer" value="" placeholder="E.g. Relationship" />
                         </div>
                         <div class="mb-3">
                             <label for="userImg" class="form-label">Upload Your Photo</label>
@@ -325,13 +184,11 @@
                             <label for="profession" class="form-label">Do you want to be a blood donor?</label>
                             <div class="mt-1">
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="isDonateBlood" id="inlineRadio1"
-                                        value="option1" />
+                                    <input class="form-check-input" type="radio" name="isDonateBlood" id="inlineRadio1" value="option1" />
                                     <label class="form-check-label" for="inlineRadio1">Yes</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="isDonateBlood" id="inlineRadio2"
-                                        value="option2" checked />
+                                    <input class="form-check-input" type="radio" name="isDonateBlood" id="inlineRadio2" value="option2" checked />
                                     <label class="form-check-label" for="inlineRadio2">No</label>
                                 </div>
                             </div>

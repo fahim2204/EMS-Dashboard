@@ -84,7 +84,7 @@
         <a class="btn border-0" id="menu-btn"><i id="menu-icon" class="fas fa-arrow-left"></i></a>
       </div>
     </div> -->
-    <?php $page='home'; include 'sidebar.php'; ?>
+    <?php $page='rewardpoint'; include 'sidebar.php'; ?>
     <!-- SIDE-NAV END -->
 
     <div class="my-container active-cont d-flex flex-column justify-content-start vh-100">
