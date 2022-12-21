@@ -29,7 +29,7 @@
     <!-- Preloader Start-->
 
     <!-- SIDE-NAV START -->
-    <?php include 'sidebar.php';?>
+    <?php $page='rewardpoint'; include 'sidebar.php'; ?>
     <!-- SIDE-NAV END -->
 
     <div class="my-container active-cont d-flex flex-column justify-content-start vh-100">
