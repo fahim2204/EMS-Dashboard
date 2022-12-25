@@ -3949,7 +3949,7 @@ fieldset:disabled .btn {
 
 .nav-link:focus,
 .nav-link:hover {
-    color: var(--bs-nav-link-hover-color);
+    color: var(--bs-body-bg);
 }
 
 .nav-link.disabled {

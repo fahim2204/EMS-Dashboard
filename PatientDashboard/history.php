@@ -30,7 +30,8 @@
     <!-- Preloader Start-->
 
     <!-- SIDE-NAV START -->
-    <?php $page='history'; include 'sidebar.php'; ?>
+    <?php $page = 'history';
+    include 'sidebar.php'; ?>
     <!-- SIDE-NAV END -->
 
     <div class="my-container active-cont d-flex flex-column justify-content-start vh-100">
@@ -67,219 +68,364 @@
 
             <div class="tab-content">
                 <div class="tab-pane container bg-light active" id="doctor">
-                    <div class="row p-1 p-md-3">
-                        <!-- Static Table Start -->
-                        <table id="doctors" class="table table-striped table-hover align-middle w-100 bg-light rounded">
-                            <thead>
-                                <tr>
-                                    <th class="text-center">SL-No</th>
-                                    <th class="text-center">Date</th>
-                                    <th class="text-center">Diagonstics</th>
-                                    <th class="text-center">Pharmacy</th>
-                                    <th class="text-center">Total Payment</th>
-                                    <th class="text-center">View</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="text-center">
-                                    <td>1</td>
-                                    <td>12/12/2022</td>
-                                    <td>AL-AQSA</td>
-                                    <td>AL-AQSA</td>
-                                    <td>2100</td>
-                                    <!-- <td><i class='bx bx-low-vision fs-5'></i></td> -->
-                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
-                                </tr>
-                                <tr class="text-center">
-                                    <td>2</td>
-                                    <td>12/12/2022</td>
-                                    <td>AL-AQSA</td>
-                                    <td>AL-AQSA</td>
-                                    <td>2100</td>
-                                    <td><i class='bx bx-low-vision fs-5'></i></td>
-                                </tr>
-                                <tr class="text-center">
-                                    <td>3</td>
-                                    <td>12/12/2022</td>
-                                    <td>AL-AQSA</td>
-                                    <td>AL-AQSA</td>
-                                    <td>2100</td>
-                                    <td><i class='bx bx-low-vision fs-5'></i></td>
-                                </tr>
-                                <tr class="text-center">
-                                    <td>4</td>
-                                    <td>12/12/2022</td>
-                                    <td>AL-AQSA</td>
-                                    <td>AL-AQSA</td>
-                                    <td>2100</td>
-                                    <td><i class='bx bx-low-vision fs-5'></i></td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-                        <!-- Static Table End -->
+                    <div class="row text-black">
+                        <div class="col-md-12 mb-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table id="example" class="table table-striped data-table" style="width: 100%">
+                                            <thead>
+                                                <tr>
+                                                    <th class="text-center">SL No.</th>
+                                                    <th class="text-center">Date</th>
+                                                    <th class="text-center">Doctor Name</th>
+                                                    <th class="text-center">View</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="text-center">
+                                                    <td>1</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td>1</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td>2</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td>3</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td>4</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td>5</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td>6</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td>7</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td>8</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td>9</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td>10</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="tab-pane container bg-light fade" id="hospital">
-                    <div class="row p-1 p-md-3">
-                        <!-- Static Table Start -->
-                        <table id="hospitals" class="table table-striped table-hover align-middle w-100 bg-light rounded">
-                            <thead>
-                                <tr>
-                                    <th class="text-center">SL-No</th>
-                                    <th class="text-center">Date</th>
-                                    <th class="text-center">Diagonstics</th>
-                                    <th class="text-center">Pharmacy</th>
-                                    <th class="text-center">Total Payment</th>
-                                    <th class="text-center">View</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="text-center">
-                                    <td>1</td>
-                                    <td>12/12/2022</td>
-                                    <td>AL-AQSA</td>
-                                    <td>AL-AQSA</td>
-                                    <td>2100</td>
-                                    <!-- <td><i class='bx bx-low-vision fs-5'></i></td> -->
-                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
-                                </tr>
-                                <tr class="text-center">
-                                    <td>2</td>
-                                    <td>12/12/2022</td>
-                                    <td>AL-AQSA</td>
-                                    <td>AL-AQSA</td>
-                                    <td>2100</td>
-                                    <td><i class='bx bx-low-vision fs-5'></i></td>
-                                </tr>
-                                <tr class="text-center">
-                                    <td>3</td>
-                                    <td>12/12/2022</td>
-                                    <td>AL-AQSA</td>
-                                    <td>AL-AQSA</td>
-                                    <td>2100</td>
-                                    <td><i class='bx bx-low-vision fs-5'></i></td>
-                                </tr>
-                                <tr class="text-center">
-                                    <td>4</td>
-                                    <td>12/12/2022</td>
-                                    <td>AL-AQSA</td>
-                                    <td>AL-AQSA</td>
-                                    <td>2100</td>
-                                    <td><i class='bx bx-low-vision fs-5'></i></td>
-                                </tr>
 
-                            </tbody>
-                        </table>
-                        <!-- Static Table End -->
+                <div class="tab-pane container bg-light fade" id="hospital">
+                    <div class="row text-black">
+                        <div class="col-md-12 mb-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table id="example" class="table table-striped data-table" style="width: 100%">
+                                            <thead>
+                                                <tr>
+                                                    <th class="text-center">SL No.</th>
+                                                    <th class="text-center">Date</th>
+                                                    <th class="text-center">Hospital Name</th>
+                                                    <th class="text-center">View</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="text-center">
+                                                    <td>1</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td>1</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td>2</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td>3</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td>4</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td>5</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td>6</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td>7</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td>8</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td>9</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td>10</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="tab-pane container bg-light fade" id="medicine">
-                    <div class="row p-1 p-md-3">
-                        <!-- Static Table Start -->
-                        <table id="medicines" class="table table-striped table-hover align-middle w-100 bg-light rounded">
-                            <thead>
-                                <tr>
-                                    <th class="text-center">SL-No</th>
-                                    <th class="text-center">Date</th>
-                                    <th class="text-center">Diagonstics</th>
-                                    <th class="text-center">Pharmacy</th>
-                                    <th class="text-center">Total Payment</th>
-                                    <th class="text-center">View</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="text-center">
-                                    <td>1</td>
-                                    <td>12/12/2022</td>
-                                    <td>AL-AQSA</td>
-                                    <td>AL-AQSA</td>
-                                    <td>2100</td>
-                                    <!-- <td><i class='bx bx-low-vision fs-5'></i></td> -->
-                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
-                                </tr>
-                                <tr class="text-center">
-                                    <td>2</td>
-                                    <td>12/12/2022</td>
-                                    <td>AL-AQSA</td>
-                                    <td>AL-AQSA</td>
-                                    <td>2100</td>
-                                    <td><i class='bx bx-low-vision fs-5'></i></td>
-                                </tr>
-                                <tr class="text-center">
-                                    <td>3</td>
-                                    <td>12/12/2022</td>
-                                    <td>AL-AQSA</td>
-                                    <td>AL-AQSA</td>
-                                    <td>2100</td>
-                                    <td><i class='bx bx-low-vision fs-5'></i></td>
-                                </tr>
-                                <tr class="text-center">
-                                    <td>4</td>
-                                    <td>12/12/2022</td>
-                                    <td>AL-AQSA</td>
-                                    <td>AL-AQSA</td>
-                                    <td>2100</td>
-                                    <td><i class='bx bx-low-vision fs-5'></i></td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-                        <!-- Static Table End -->
+                    <div class="row text-black">
+                        <div class="col-md-12 mb-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table id="example" class="table table-striped data-table" style="width: 100%">
+                                            <thead>
+                                                <tr>
+                                                    <th class="text-center">SL No.</th>
+                                                    <th class="text-center">Date</th>
+                                                    <th class="text-center">Medicine Name</th>
+                                                    <th class="text-center">View</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="text-center">
+                                                    <td>1</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td>1</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td>2</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td>3</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td>4</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td>5</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td>6</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td>7</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td>8</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td>9</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td>10</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="tab-pane container bg-light fade" id="diagonstic">
-                    <div class="row p-1 p-md-3">
-                        <!-- Static Table Start -->
-                        <table id="diagonstics" class="table table-striped table-hover align-middle w-100 bg-light rounded">
-                            <thead>
-                                <tr>
-                                    <th class="text-center">SL-No</th>
-                                    <th class="text-center">Date</th>
-                                    <th class="text-center">Diagonstics</th>
-                                    <th class="text-center">Pharmacy</th>
-                                    <th class="text-center">Total Payment</th>
-                                    <th class="text-center">View</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="text-center">
-                                    <td>1</td>
-                                    <td>12/12/2022</td>
-                                    <td>AL-AQSA</td>
-                                    <td>AL-AQSA</td>
-                                    <td>2100</td>
-                                    <!-- <td><i class='bx bx-low-vision fs-5'></i></td> -->
-                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
-                                </tr>
-                                <tr class="text-center">
-                                    <td>2</td>
-                                    <td>12/12/2022</td>
-                                    <td>AL-AQSA</td>
-                                    <td>AL-AQSA</td>
-                                    <td>2100</td>
-                                    <td><i class='bx bx-low-vision fs-5'></i></td>
-                                </tr>
-                                <tr class="text-center">
-                                    <td>3</td>
-                                    <td>12/12/2022</td>
-                                    <td>AL-AQSA</td>
-                                    <td>AL-AQSA</td>
-                                    <td>2100</td>
-                                    <td><i class='bx bx-low-vision fs-5'></i></td>
-                                </tr>
-                                <tr class="text-center">
-                                    <td>4</td>
-                                    <td>12/12/2022</td>
-                                    <td>AL-AQSA</td>
-                                    <td>AL-AQSA</td>
-                                    <td>2100</td>
-                                    <td><i class='bx bx-low-vision fs-5'></i></td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-                        <!-- Static Table End -->
+                    <div class="row text-black">
+                        <div class="col-md-12 mb-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table id="example" class="table table-striped data-table" style="width: 100%">
+                                            <thead>
+                                                <tr>
+                                                    <th class="text-center">SL No.</th>
+                                                    <th class="text-center">Date</th>
+                                                    <th class="text-center">Diagonstic Name</th>
+                                                    <th class="text-center">View</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="text-center">
+                                                    <td>1</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td>1</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td>2</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td>3</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td>4</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td>5</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td>6</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td>7</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td>8</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td>9</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td>10</td>
+                                                    <td>12/12/2022</td>
+                                                    <td>AL-AQSA</td>
+                                                    <td><a href="#" data-toggle="popover" title="Report Details" data-content="Some content inside the popover"><i class='bx bx-low-vision fs-5'></i></a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -307,13 +453,18 @@
     <script src="js/datatables.min.js"></script>
     <script src="js/main.js"></script>
     <script>
+        // $(document).ready(function() {
+        //     $('#doctors').DataTable({
+        //         scrollX: true,
+        //     });
+        //     $('#hospitals').DataTable();
+        //     $('#medicines').DataTable();
+        //     $('#diagonstics').DataTable();
+        // });
         $(document).ready(function() {
-            $('#doctors').DataTable({
-                scrollX: true,
+            $(".data-table").each(function(_, table) {
+                $(table).DataTable();
             });
-            $('#hospitals').DataTable();
-            $('#medicines').DataTable();
-            $('#diagonstics').DataTable();
         });
         $(document).ready(function() {
             $('[data-toggle="popover"]').popover();
