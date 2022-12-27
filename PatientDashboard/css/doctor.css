@@ -1,0 +1,40 @@
+.table-voucher table {
+    text-align: center;
+}
+
+.table-voucher .cancelled {
+    color: red;
+    /* font-weight: bold; */
+}
+@media (max-width: 575px) {
+    .table-voucher table thead {
+        display: none;
+    }
+
+    .table-voucher table tr {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid grey;
+        border-radius: 5px;
+        margin: 3px;
+        padding: 1px;
+    }
+    .table-voucher table td {
+        padding: 5px 8px;
+    }
+    .table-voucher table td button{
+       margin: 5px;
+    }
+
+    .table-voucher table td[data-label] {
+        display: flex;
+        /* font-weight: bold; */
+    }
+
+    .table-voucher table td[data-label]::before {
+        content: attr(data-label);
+        color: rgb(139, 139, 139);
+        font-weight: 100;
+        width: 50%;
+    }
+}

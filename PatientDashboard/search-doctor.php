@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/font-awesome-all.css" />
     <link rel="stylesheet" href="css/boxicons.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/doctor.css" />
     <!-- CSS SECTION END -->
 </head>
 
@@ -30,148 +31,151 @@
     <!-- Preloader Start-->
 
     <!-- SIDE-NAV START -->
-    <?php $page='doctor'; include 'sidebar.php'; ?>
+    <?php $page = 'doctor';
+    include 'sidebar.php'; ?>
     <!-- SIDE-NAV END -->
 
     <div class="my-container active-cont d-flex flex-column justify-content-start vh-100">
         <!-- Top Nav -->
-        <?php include 'header.php';?>
+        <?php include 'header.php'; ?>
         <!--End Top Nav -->
         <!-- MAIN BODY CONTENT START -->
         <div class="container">
 
             <div class="row d-flex align-items-center justify-content-between my-3 mx-2">
-                <div class="col-sm-12 col-md-4">
+                <div class="col-sm-12 col-md-6 mb-2">
                     <i class='bx bx-plus-medical fs-5 text-ems-red'><span class="text-ems-green h4" style="padding-left: 5px;">Doctors</span></i>
                 </div>
-                <div class="col-3 col-md-4 d-flex justify-content-end gap-2 text-ems-green cursor-pointer">
-
-                    <i class='bx bx-list-ul fs-3' id="list"></i>
-                    <i class='bx bx-grid-alt fs-3' id="grid"></i>
-                </div>
-                <div class="col-7 col-md-4 form-outline">
-                    <input type="search" class="form-control" id="searchDoctor" placeholder="Search..">
-                </div>
-            </div>
-            <div class="container">
-                <div id="doctors" class="row view-group">
-                    <div class="item col-xs-4 col-lg-4" id="doctor">
-                        <div class="thumbnail card l-bg-green-dark">
-                            <div class="img-event ">
-                                <img alt="logo" class=" group list-group-image img-fluid" src="img/doctor.jpg" />
-                            </div>
-                            <div class="caption card-body p-3">
-                                <h5 class="mt-2 fw-bold" id="doctorName">Prof. Dr. Ehsan</h5>
-                                <p class="fs-7 mb-0" id="doctorDesig">MBBS, Ph.D., FICS (Neurosurgery)</p>
-                                <p class="fs-7" id="doctorSpecial">Medicine Specialist</p>
-                                <div class="d-flex justify-content-center ">
-                                    <a href="appointment.php" class="btn btn-sm btn-danger bg-ems-red mt-2"> <i
-                                            class="far fs-5 fa-calendar-plus me-1"></i> Make an Appoinment</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="item col-xs-4 col-lg-4" id="doctor">
-                        <div class="thumbnail card l-bg-green-dark">
-                            <div class="img-event">
-                                <img alt="logo" class=" group list-group-image img-fluid" src="img/doctor.jpg" />
-                            </div>
-                            <div class="caption card-body">
-                                <h5 class="mt-2 fw-bold" id="doctorName">Prof. Dr. Sayem</h5>
-                                <p class="fs-7 mb-0" id="doctorDesig">MBBS, Ph.D., FICS (Neurosurgery)</p>
-                                <p class="fs-7" id="doctorSpecial">Medicine Specialist</p>
-                                <div class="text-center">
-                                    <a href="appointment.php" class="btn btn-sm btn-danger bg-ems-red mt-2"> <i
-                                            class="far fs-5 fa-calendar-plus me-1"></i> Make an Appoinment</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item col-xs-4 col-lg-4" id="doctor">
-                        <div class="thumbnail card l-bg-green-dark">
-                            <div class="img-event">
-                                <img alt="logo" class=" group list-group-image img-fluid" src="img/doctor.jpg" />
-                            </div>
-                            <div class="caption card-body">
-                                <h5 class="mt-2 fw-bold" id="doctorName">Prof. Dr. Fahim Faisal</h5>
-                                <p class="fs-7 mb-0" id="doctorDesig">MBBS, Ph.D., FICS (Neurosurgery)</p>
-                                <p class="fs-7" id="doctorSpecial">Medicine Specialist</p>
-                                <div class="text-center">
-                                    <a href="appointment.php" class="btn btn-sm btn-danger bg-ems-red mt-2"> <i
-                                            class="far fs-5 fa-calendar-plus me-1"></i> Make an Appoinment</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item col-xs-4 col-lg-4" id="doctor">
-                        <div class="thumbnail card l-bg-green-dark">
-                            <div class="img-event">
-                                <img alt="logo" class=" group list-group-image img-fluid" src="img/doctor.jpg" />
-                            </div>
-                            <div class="caption card-body">
-                                <h5 class="mt-2 fw-bold" id="doctorName">Prof. Dr. Nobi Nawas</h5>
-                                <p class="fs-7 mb-0" id="doctorDesig">MBBS, Ph.D., FICS (Neurosurgery)</p>
-                                <p class="fs-7" id="doctorSpecial">Medicine Specialist</p>
-                                <div class="text-center">
-                                    <a href="appointment.php" class="btn btn-sm btn-danger bg-ems-red mt-2"> <i
-                                            class="far fs-5 fa-calendar-plus me-1"></i> Make an Appoinment</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item col-xs-4 col-lg-4" id="doctor">
-                        <div class="thumbnail card l-bg-green-dark">
-                            <div class="img-event">
-                                <img alt="logo" class=" group list-group-image img-fluid" src="img/doctor.jpg" />
-                            </div>
-                            <div class="caption card-body">
-                                <h5 class="mt-2 fw-bold" id="doctorName">Prof. Dr. Tasiful Alam</h5>
-                                <p class="fs-7 mb-0" id="doctorDesig">MBBS, Ph.D., FICS (Neurosurgery)</p>
-                                <p class="fs-7" id="doctorSpecial">Medicine Specialist</p>
-                                <div class="text-center">
-                                    <a href="appointment.php" class="btn btn-sm btn-danger bg-ems-red mt-2"> <i
-                                            class="far fs-5 fa-calendar-plus me-1"></i> Make an Appoinment</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item col-xs-4 col-lg-4" id="doctor">
-                        <div class="thumbnail card l-bg-green-dark">
-                            <div class="img-event">
-                                <img alt="logo" class=" group list-group-image img-fluid" src="img/doctor.jpg" />
-                            </div>
-                            <div class="caption card-body">
-                                <h5 class="mt-2 fw-bold" id="doctorName">Prof. Dr. Albert</h5>
-                                <p class="fs-7 mb-0" id="doctorDesig">MBBS, Ph.D., FICS (Neurosurgery)</p>
-                                <p class="fs-7" id="doctorSpecial">Medicine Specialist</p>
-                                <div class="text-center">
-                                    <a href="appointment.php" class="btn btn-sm btn-danger bg-ems-red mt-2"> <i
-                                            class="far fs-5 fa-calendar-plus me-1"></i> Make an Appoinment</a>
-                                </div>
-                            </div>
-                        </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="input-group">
+                        <select id="doctor" class="form-select" aria-label="doctor_details">
+                            <option value="1">Name</option>
+                            <option value="2">Specialty</option>
+                            <option value="3">Chamber</option>
+                            <option value="4">Location</option>
+                        </select>
+                        <input type="search" class="form-control w-50" id="searchDoctor" aria-label="Text input with dropdown button" placeholder="Search..">
                     </div>
                 </div>
             </div>
-            
-
-
+            <div class="table-responsive table-voucher">
+                <table class="table table-hover table-bordered">
+                    <thead>
+                        <tr class="text-center">
+                            <th>Doctor Name</th>
+                            <th>Designation</th>
+                            <th>Specialty</th>
+                            <th>Qualification</th>
+                            <th>Age</th>
+                            <th>P/Y of MBBS</th>
+                            <th>Location</th>
+                            <th>Chamber</th>
+                            <th>Action</th>
+                            <th>Appointment</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="text-center">
+                            <td data-label="Doctor Name">DR. Sayem</td>
+                            <td data-label="Designation">Professor</td>
+                            <td data-label="Specialty">Neuro</td>
+                            <td data-label="Qualification">MBBS, FCPS</td>
+                            <td data-label="Age">30</td>
+                            <td data-label="P/Y of MBBS">2015</td>
+                            <td data-label="Location">Dhaka</td>
+                            <td data-label="Chamber">Popular Hospital
+                            </td>
+                            <td data-label="View Doctors Profile"><i class='bx bx-low-vision fs-5'></i></td>
+                            <td data-label="Type of appointment"><button class="btn btn-sm btn-success rounded-pill py-1">Online</button>
+                                <button class="btn btn-sm btn-success rounded-pill py-1">Chamber</button>
+                            </td>
+                        </tr>
+                        <tr class="text-center">
+                            <td data-label="Doctor Name">DR. Afaz Uddin</td>
+                            <td data-label="Designation">Professor</td>
+                            <td data-label="Specialty">Medicine</td>
+                            <td data-label="Qualification">MBBS, FCPS</td>
+                            <td data-label="Age">30</td>
+                            <td data-label="P/Y of MBBS">2015</td>
+                            <td data-label="Location">Dhaka</td>
+                            <td data-label="Chamber">Popular Hospital
+                            </td>
+                            <td data-label="View Doctors Profile"><i class='bx bx-low-vision fs-5'></i></td>
+                            <td data-label="Type of appointment"><button class="btn btn-sm btn-success rounded-pill py-1">Online</button>
+                                <button class="btn btn-sm btn-success rounded-pill py-1">Chamber</button>
+                            </td>
+                        </tr>
+                        <tr class="text-center">
+                            <td data-label="Doctor Name">DR. Sayem</td>
+                            <td data-label="Designation">Professor</td>
+                            <td data-label="Specialty">Neuro</td>
+                            <td data-label="Qualification">MBBS, FCPS</td>
+                            <td data-label="Age">30</td>
+                            <td data-label="P/Y of MBBS">2015</td>
+                            <td data-label="Location">Dhaka</td>
+                            <td data-label="Chamber">Popular Hospital
+                            </td>
+                            <td data-label="View Doctors Profile"><i class='bx bx-low-vision fs-5'></i></td>
+                            <td data-label="Type of appointment"><button class="btn btn-sm btn-success rounded-pill py-1">Online</button>
+                                <button class="btn btn-sm btn-success rounded-pill py-1">Chamber</button>
+                            </td>
+                        </tr>
+                        <tr class="text-center">
+                            <td data-label="Doctor Name">DR. Sayem</td>
+                            <td data-label="Designation">Professor</td>
+                            <td data-label="Specialty">Neuro</td>
+                            <td data-label="Qualification">MBBS, FCPS</td>
+                            <td data-label="Age">30</td>
+                            <td data-label="P/Y of MBBS">2015</td>
+                            <td data-label="Location">Dhaka</td>
+                            <td data-label="Chamber">Popular Hospital
+                            </td>
+                            <td data-label="View Doctors Profile"><i class='bx bx-low-vision fs-5'></i></td>
+                            <td data-label="Type of appointment"><button class="btn btn-sm btn-success rounded-pill py-1">Online</button>
+                                <button class="btn btn-sm btn-success rounded-pill py-1">Chamber</button>
+                            </td>
+                        </tr>
+                        <tr class="text-center">
+                            <td data-label="Doctor Name">DR. Sayem</td>
+                            <td data-label="Designation">Professor</td>
+                            <td data-label="Specialty">Neuro</td>
+                            <td data-label="Qualification">MBBS, FCPS</td>
+                            <td data-label="Age">30</td>
+                            <td data-label="P/Y of MBBS">2015</td>
+                            <td data-label="Location">Dhaka</td>
+                            <td data-label="Chamber">Popular Hospital
+                            </td>
+                            <td data-label="View Doctors Profile"><i class='bx bx-low-vision fs-5'></i></td>
+                            <td data-label="Type of appointment"><button class="btn btn-sm btn-success rounded-pill py-1">Online</button>
+                                <button class="btn btn-sm btn-success rounded-pill py-1">Chamber</button>
+                            </td>
+                        </tr>
+                        <tr class="text-center">
+                            <td data-label="Doctor Name">DR. Sayem</td>
+                            <td data-label="Designation">Professor</td>
+                            <td data-label="Specialty">Neuro</td>
+                            <td data-label="Qualification">MBBS, FCPS</td>
+                            <td data-label="Age">30</td>
+                            <td data-label="P/Y of MBBS">2015</td>
+                            <td data-label="Location">Dhaka</td>
+                            <td data-label="Chamber">Popular Hospital
+                            </td>
+                            <td data-label="View Doctors Profile"><i class='bx bx-low-vision fs-5'></i></td>
+                            <td data-label="Type of appointment"><button class="btn btn-sm btn-success rounded-pill py-1 bt">Online</button>
+                                <button class="btn btn-sm btn-success rounded-pill py-1 bt">Chamber</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-        <!-- MAIN BODY CONTENT END -->
+    <!-- MAIN BODY CONTENT END -->
 
-        <!-- Footer Start -->
+    <!-- Footer Start -->
 
-        <footer class="container-fluid bg-ems-green mt-auto">
-            <p class="text-light text-center pt-3">
-                Copyright © 2022. All rights reserved
-                <a class="text-decoration-none text-light fw-bold" href="http://sfgroup.com.bd">
-                    SF GROUP
-                </a>
-            </p>
-        </footer>
+    <?php include 'footer.php'; ?>
 
-        <!-- Footer End  -->
+    <!-- Footer End  -->
     </div>
 
     <!-- JS SCRIPT START -->
@@ -181,19 +185,14 @@
     <script src="js/main.js"></script>
     <script>
         // search doctor function
-        $(document).ready(function () {
-            $("#searchDoctor").on("keyup", function () {
-                var value = $(this).val().toLowerCase();
-                $("#doctors #doctor").filter(function () {
-                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-                });
-            });
-        });
-        // list and grid function
-        $(document).ready(function () {
-            $('#list').click(function (event) { event.preventDefault(); $('#doctors .item').addClass('list-group-item'); });
-            $('#grid').click(function (event) { event.preventDefault(); $('#doctors .item').removeClass('list-group-item'); $('#doctors .item').addClass('grid-group-item'); });
-        });
+        // $(document).ready(function() {
+        //     $("#searchDoctor").on("keyup", function() {
+        //         var value = $(this).val().toLowerCase();
+        //         $("#doctors #doctor").filter(function() {
+        //             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        //         });
+        //     });
+        // });
     </script>
     <!-- JS SCRIPT END -->
 </body>

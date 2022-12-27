@@ -91,17 +91,44 @@ body {
 
 
 /* Customs Fro EMS End */
-
 .side-navbar {
     width: 250px;
     height: 100%;
-    overflow-y: auto;
+    overflow-y: hidden;
     position: fixed;
     margin-left: -300px;
     background-color: white;
     transition: 0.5s;
     color: white;
-}
+  }
+  /* .side-navbar .side-header{
+      position: absolute;
+  } */
+  .side-navbar .side-menus{
+      overflow-y: auto;
+      height: calc(100% - 76px);
+      padding-bottom: 20px;
+  }
+  .side-menus::-webkit-scrollbar-track
+  {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      border-radius: 10px;
+      background-color: #F5F5F5;
+  }
+  
+  .side-menus::-webkit-scrollbar
+  {
+      width: 8px;
+      background-color: #F5F5F5;
+  }
+  
+  .side-menus::-webkit-scrollbar-thumb
+  {
+      border-radius: 10px;
+      background-color: #006739;
+  }
+  
+  
 
 .active-nav {
     margin-left: 0;
@@ -363,67 +390,9 @@ body {
 
 /* Spinner Loader End */
 
-/* search doctor list and grid item start */
-.view-group {
-    display: flex;
-    flex-direction: row;
-}
+/* search doctor table start */
 
-.thumbnail {
-    margin-bottom: 30px;
-    padding: 0px;
-    border-radius: 0px;
-}
-
-.item.list-group-item {
-    float: none;
-    width: 100%;
-    background-color: #fff;
-    margin-bottom: 30px;
-    max-width: 100%;
-    padding: 0 1rem;
-    border: 0;
-}
-.item.list-ems-item {
-    float: none;
-    width: 70%;
-    margin-bottom: 30px;
-    max-width: 100%;
-    padding: 0 1rem;
-    border: 0;
-    transition: all 0.5ms;
-    
-}
-.item.list-group-item .img-event {
-    float: left;
-    width: 30%;
-}
-
-.item.list-group-item .list-group-image {
-    margin-right: 10px;
-}
-
-.item.list-group-item .thumbnail {
-    margin-bottom: 0px;
-    display: inline-block;
-}
-
-.item.list-group-item .caption {
-    float: right;
-    width: 70%;
-    margin: 0;
-}
-
-.item.list-group-item:before,
-.item.list-group-item:after {
-    display: table;
-    content: " ";
-} 
-
- .item.list-group-item:after {
-    clear: both;
-} 
-/* search doctor list and grid item end */
+/* search doctor table end */
 
 /* media query */
 @media (max-width: 575.98px) {

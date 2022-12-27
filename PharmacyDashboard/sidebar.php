@@ -12,10 +12,7 @@
             <i class="bx bxs-edit-alt"></i>
             <span class="mx-2">Update Your Details</span>
         </a>
-        <a href="update-details.php" class="nav-link">
-            <i class="bx bxs-edit-alt"></i>
-            <span class="mx-2">Search Your Needs</span>
-        </a>
+
         <a href="search-medicine.php" class="nav-link <?php if($page=='Smedicine'){echo 'active';}?>">
             <i class="bx bxs-capsule"></i>
             <span class="mx-2">Search Medicine</span>

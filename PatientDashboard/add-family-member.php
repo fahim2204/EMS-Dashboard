@@ -38,11 +38,6 @@
         <!--End Top Nav -->
         <!-- MAIN BODY CONTENT START -->
         <div class="container">
-            <!-- <div class="text-end">
-          <div class="alert alert-warning d-inline-block py-2 mt-2 text-start" role="alert">
-            Please Update all information to access the full feature.
-          </div>
-        </div> -->
             <div class="text-center h4 text-ems-green mt-3 text-decoration-underline">Add Family Member</div>
             <form action="#" method="post">
                 <div class="row p-3 bg-light rounded-2 m-2 mt-4 shadow-sm">
@@ -172,14 +167,7 @@
 
         <!-- Footer Start -->
 
-        <footer class="container-fluid bg-ems-green mt-auto">
-            <p class="text-light text-center py-3 mb-0">
-                Copyright © 2022. All rights reserved
-                <a class="text-decoration-none text-light fw-bold" href="http://sfgroup.com.bd">
-                    SF GROUP
-                </a>
-            </p>
-        </footer>
+        <?php include 'footer.php';?>
 
         <!-- Footer End  -->
     </div>

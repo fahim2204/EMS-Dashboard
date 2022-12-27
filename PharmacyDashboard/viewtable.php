@@ -44,7 +44,7 @@
             <div class="row p-1 p-md-3">
 
                 <!-- Static Table Start -->
-                <table id="familyMembers" class="table  table-hover align-middle  w-100 bg-light rounded shadow">
+                <table id="familyMembers" class="table  table-hover align-middle  w-100 bg-light rounded shadow text-black">
                     <thead>
                         <tr>
                             <th class="text-center">SL-No</th>
